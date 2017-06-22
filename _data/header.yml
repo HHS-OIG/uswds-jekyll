@@ -19,4 +19,9 @@ secondary:
   # search:
   #   action: /search/
   #   param: q
-  search: false
+  #
+  # To disable replace with
+  # search: false
+  search:
+    action: /search/
+    param: q
