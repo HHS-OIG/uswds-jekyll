@@ -11,3 +11,6 @@
 # Jekyll stuff
 .jekyll-metadata
 _site
+
+# Sass stuff
+.sass-cache/
