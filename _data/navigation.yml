@@ -10,20 +10,56 @@
 #   links: primary
 #
 primary:
-  - text: Documentation
-    href: /docs/
-  - text: Navigation section
+  - text: Tools & Resources
     links:
-      - text: Demo link A
-        href: /two/a/
-      - text: Demo link B
-        href: /two/b/
-      - text: Demo link C
-        href: /two/c/
-  - text: Referenced section
-    links: footer
+      - text: Admin
+        href: /resources/admin/
+      - text: Operations
+        href: /resources/operations/
+      - text: Training
+        href: /resources/training/
+  - text: HQ Branches
+    links:
+      - text: Administrative Operations
+        href: /branches/administrative-operations/
+      - text: Digital Investigations
+        href: /branches/digital-investigations/
+      - text: Exclusions
+        href: /branches/exclusions/
+      - text: Investigations
+        href: /branches/investigations/
+      - text: National Training & Emergency Operations
+        href: /branches/national-training-emergency-operations/
+      - text: Special Investigations
+        href: /branches/special-investigations/
+  - text: Regions
+    links:
+      - text: Boston, MA – Region 1
+        href: /tbd/
+      - text: New York, NY – Region 2
+        href: /tbd/
+      - text: Philadelphia, PA – Region 3
+        href: /tbd/
+      - text: Atlanta, GA – Region 4
+        href: /tbd/
+      - text: Miami, FL – Region M
+        href: /tbd/
+      - text: Chicago, IL – Region 5
+        href: /tbd/
+      - text: Dallas, TX – Region 6
+        href: /tbd/
+      - text: Kansas City, MO – Region 7
+        href: /tbd/
+      - text: San Francisco, CA – Region 9
+        href: /tbd/
+      - text: Los Angeles, CA – Region LA
+        href: /tbd/
 
-secondary: []
+
+
+secondary:
+   - text: OneOIG
+     url: http://oigportal/
 
 footer:
   - text: Documentation
