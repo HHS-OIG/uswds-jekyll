@@ -1,11 +1,11 @@
-.hhsoig-header .usa-nav {
+.hhsoig-header-dark .usa-nav {
   background: $color-primary-darker;
 }
 
 
 // Primary navigation ------------- //
 
-.hhsoig-header .usa-nav-primary {
+.hhsoig-header-dark .usa-nav-primary {
 
   > li > a {
     @include media($nav-width) {
@@ -52,7 +52,7 @@
 
 
 
-.usa-nav-secondary-links {
+.hhsoig-header-dark .usa-nav-secondary-links {
 
   li {
     &:not(:last-child)::after {
