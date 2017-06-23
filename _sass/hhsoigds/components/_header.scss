@@ -1,3 +1,22 @@
 .hhsoig-header {
   background-color: $color-primary-darker;
+
+  .usa-logo-text a {
+    color: $color-white;
+  }
+
+  .usa-menu-btn {
+    background-color: $color-white;
+    color: $color-primary;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+
+    &:visited {
+      color: $color-primary;
+    }
+  }
+
 }

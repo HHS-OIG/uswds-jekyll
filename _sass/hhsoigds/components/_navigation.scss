@@ -1,0 +1,80 @@
+.hhsoig-header .usa-nav {
+  background: $color-primary-darker;
+}
+
+
+// Primary navigation ------------- //
+
+.hhsoig-header .usa-nav-primary {
+
+  > li > a {
+    @include media($nav-width) {
+      color: $color-white;
+    }
+  }
+
+  button {
+    @include media($nav-width) {
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-primary-darker;
+      color: $color-white;
+    }
+
+    &[aria-expanded=false] { /* stylelint-disable-line selector-no-qualifying-type */
+
+      @include media($nav-width) {
+        background-image: url('#{$hhsoig-image-path}/angle-arrow-down-white.png');
+        background-image: url('#{$hhsoig-image-path}/angle-arrow-down-white.svg');
+      }
+    }
+
+
+    &[aria-expanded=true] { /* stylelint-disable-line selector-no-qualifying-type */
+
+      @include media($nav-width) {
+        background-image: url('#{$hhsoig-image-path}/angle-arrow-down-white.png');
+        background-image: url('#{$hhsoig-image-path}/angle-arrow-down-white.svg');
+
+        background-color: $color-primary-darkest;
+        color: $color-white;
+
+        &:hover {
+          background-color: $color-primary-darkest;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+.usa-nav-secondary-links {
+
+  li {
+    &:not(:last-child)::after {
+      @include media($nav-width) {
+        color: $color-gray-light;
+      }
+    }
+  }
+
+  a,
+  .usa-header-search-button {
+    color: $color-white;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  .usa-header-search-button {
+    @include media($nav-width) {
+      background-image: url('#{$hhsoig-image-path}/search.png');
+      background-image: url('#{$hhsoig-image-path}/search.svg');
+    }
+  }
+}

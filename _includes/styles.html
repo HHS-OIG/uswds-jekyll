@@ -1,9 +1,9 @@
 {% assign _styles = '' | split: '' %}
 {% assign _site_styles = site.styles %}
 {% unless _site_styles -%}
-  {% assign _main_css = '/assets/main.css' %}
+  {% assign _hhsoigds_css = '/assets/hhsoigds/css/hhsoigds.css' %}
   {% assign _site_styles = '' | split: ''
-    | push: _main_css %}
+    | push: _hhsoigds_css %}
 {% endunless %}
 {% assign _styles = _styles
   | push: _site_styles
