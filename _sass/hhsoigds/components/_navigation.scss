@@ -1,15 +1,12 @@
-
 // Blue header overrides for primary navigation on large viewports
 @include media($nav-width) {
-
   .hhsoig-header-dark .usa-nav {
     background: $color-primary-darker;
   }
 
   .hhsoig-header-dark .usa-nav-primary {
-
     > li > a {
-        color: $color-white;
+      color: $color-white;
     }
 
     button {
@@ -20,16 +17,16 @@
         color: $color-white;
       }
 
-      &[aria-expanded=false] { /* stylelint-disable-line selector-no-qualifying-type */
-          background-image: url('#{$hhsoig-image-path}/angle-arrow-down-white.png');
-          background-image: url('#{$hhsoig-image-path}/angle-arrow-down-white.svg');
+      &[aria-expanded=false] {
+        background-image: url("#{$hhsoig-image-path}/angle-arrow-down-white.png");
+        background-image: url("#{$hhsoig-image-path}/angle-arrow-down-white.svg");
       }
 
-      &[aria-expanded=true] { /* stylelint-disable-line selector-no-qualifying-type */
-        background-image: url('#{$hhsoig-image-path}/angle-arrow-down-white.png');
-        background-image: url('#{$hhsoig-image-path}/angle-arrow-down-white.svg');
-        // background-color: $color-primary-darkest;
+      &[aria-expanded=true] {
+        background-image: url("#{$hhsoig-image-path}/angle-arrow-down-white.png");
+        background-image: url("#{$hhsoig-image-path}/angle-arrow-down-white.svg");
         color: $color-white;
+
         &:hover {
           background-color: $color-primary-darkest;
         }
@@ -38,11 +35,10 @@
   }
 
   .hhsoig-header-dark .usa-nav-secondary-links {
-
     li {
       &:not(:last-child)::after {
-          color: $color-gray-light;
-        }
+        color: $color-gray-light;
+      }
     }
 
     a,
@@ -55,8 +51,8 @@
     }
 
     .usa-header-search-button {
-      background-image: url('#{$hhsoig-image-path}/search.png');
-      background-image: url('#{$hhsoig-image-path}/search.svg');
+      background-image: url("#{$hhsoig-image-path}/search.png");
+      background-image: url("#{$hhsoig-image-path}/search.svg");
     }
   }
 }
