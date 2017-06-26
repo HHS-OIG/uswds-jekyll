@@ -1,7 +1,10 @@
 .hhsoig-post_list {
-
   a {
     @include remove-underlines();
-  }
 
+    // FIXME: Disabling purple visited links during design/dev phase. Remove in production. 
+    &:visited {
+      color: $color-primary;
+    }
+  }
 }
