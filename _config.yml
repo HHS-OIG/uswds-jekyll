@@ -1,1 +1,3 @@
 title: Office of Investigations
+# Bind to all available IPs to enable connections over the local network
+host: 0.0.0.0

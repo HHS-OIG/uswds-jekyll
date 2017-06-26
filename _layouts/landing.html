@@ -2,8 +2,10 @@
 layout: base
 ---
 
+{% comment %}
 {% assign hero = page.hero %}
 {% include components/hero.html %}
+{% endcomment %}
 
 {% if page.tagline and page.intro %}
 <section class="usa-grid usa-section">
@@ -17,19 +19,28 @@ layout: base
 {% endif %}
 
 {% if site.posts %}
-<section class="usa-grid usa-section">
+<section class="usa-section hhsoig-section-highlight">
   <div class="usa-grid">
-    <div class="usa-width-one-whole">
-      <ul>
-        {% for post in site.posts %}
-          <li>
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p>{{post.date | date: "%B %-d, %Y"}} | {{post.categories}}</p>
-            {{ post.excerpt }}
-          </li>
+    <ul class="usa-unstyled-list hhsoig-post_list">
+      {% for post in site.posts limit:2 %}
+        <li class="usa-width-one-third">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p>{{post.date | date: "%B %-d, %Y"}} | {{post.categories}}</p>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+      <li class="usa-width-one-third">
+      <h4>Previous Updates</h4>
+        {% for post in site.posts offset:2 limit:4 %}
+          <ul class="usa-unstyled-list">
+            <li>
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              <p>{{post.date | date: "%B %-d, %Y"}} | {{post.categories}}</p>
+            </li>
+          </ul>
         {% endfor %}
-      </ul>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
 {% endif %}

@@ -9,6 +9,8 @@ $font-path: '../../uswds/fonts';
 $image-path: '../../uswds/img';
 $hhsoig-image-path:   '../img';
 
+$output-bourbon-deprecation-warnings: false;
+
 
 @import 'uswds/all';
 

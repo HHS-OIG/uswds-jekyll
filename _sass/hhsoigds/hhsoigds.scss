@@ -10,7 +10,7 @@
 // @import 'core/fonts';
 // @import 'core/base';
 // @import 'core/grid';
-// @import 'core/utilities';
+@import 'core/utilities';
 
 // Elements -------------- //
 // Styles basic HTML elements
@@ -21,7 +21,7 @@
 // @import 'elements/labels';
 // @import 'elements/list';
 // @import 'elements/table';
-// @import 'elements/typography';
+@import 'elements/typography';
 
 // Components -------------- //
 // @import 'components/accordions';
@@ -35,7 +35,8 @@
 // @import 'components/layout';
 // @import 'components/media-block';
 @import 'components/navigation';
+@import 'components/post-list';
 // @import 'components/search';
-// @import 'components/section';
+@import 'components/section';
 // @import 'components/sidenav';
 // @import 'components/skipnav';
