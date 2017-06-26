@@ -24,7 +24,12 @@ layout: base
     <ul class="usa-unstyled-list hhsoig-post_list">
       {% for post in site.posts limit:2 %}
         <li class="usa-width-one-third">
-          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <a href="{{ post.url }}">
+            {% if post.image %}
+              <img src="{{post.image.path}}" alt="{{post.image.alt}}">
+            {% endif %}
+          <h3>{{ post.title }}</h3>
+          </a>
           <p>{{post.date | date: "%B %-d, %Y"}} | {{post.categories}}</p>
           {{ post.excerpt }}
         </li>
