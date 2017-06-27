@@ -21,9 +21,10 @@ layout: base
 {% if site.posts %}
 <section class="usa-section hhsoig-section-highlight">
   <div class="usa-grid">
+    <h2>News &amp; Updates</h2>
     <ul class="usa-unstyled-list hhsoig-post_list">
       {% for post in site.posts limit:2 %}
-        <li class="usa-width-one-third">
+        <li class="usa-width-one-third usa-media_block">
           <a href="{{ post.url }}">
             {% if post.image %}
               <img src="{{post.image.path}}" alt="{{post.image.alt}}">
@@ -35,7 +36,7 @@ layout: base
         </li>
       {% endfor %}
       <li class="usa-width-one-third">
-      <h4>Previous Updates</h4>
+      <h3>Previous Updates</h3>
         {% for post in site.posts offset:2 limit:4 %}
           <ul class="usa-unstyled-list">
             <li>

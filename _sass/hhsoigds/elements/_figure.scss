@@ -1,0 +1,4 @@
+// Bizzarly given margins in _normalize.scss. We'll keep top & bottom.
+figure {
+  @include margin(null 0 null);
+}

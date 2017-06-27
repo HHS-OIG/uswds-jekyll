@@ -7,7 +7,12 @@ main:
 <h1>{{ page.title }}</h1>
 <p>{{page.date | date: "%B %-d, %Y"}} | {{page.categories}}</p>
 
-<img src="{{ page.image.path }}" alt="{{ page.image.alt }}">
+<figure>
+  <img src="{{ page.image.path }}" alt="{{ page.image.alt }}">
+  {% if page.image.caption %}
+    <figcaption>{{ page.image.caption }}</figcaption>
+  {% endif %}
+</figure>
 
 {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
 {% if sidenav %}
