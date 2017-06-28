@@ -1,2 +1,5 @@
 {% assign header = site.data.header %}
 {% include components/header.html %}
+{% if page.back_link == true or layout.back_link == true %}
+  {% include components/back-link.html %}
+{% endif %}
