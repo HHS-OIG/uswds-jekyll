@@ -31,7 +31,11 @@ layout: base
             {% endif %}
           <h3>{{ post.title }}</h3>
           </a>
-          <p>{{post.date | date: "%B %-d, %Y"}} | {{post.categories}}</p>
+          <p>{{post.date | date: "%B %-d, %Y"}} |
+          {% for category in post.categories %}
+            {{category}}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+          </p>
           {{ post.excerpt }}
         </li>
       {% endfor %}
@@ -41,7 +45,11 @@ layout: base
           <ul class="usa-unstyled-list">
             <li>
               <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-              <p>{{post.date | date: "%B %-d, %Y"}} | {{post.categories}}</p>
+              <p>{{post.date | date: "%B %-d, %Y"}} |
+              {% for category in post.categories %}
+                {{category}}{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+              </p>
             </li>
           </ul>
         {% endfor %}
