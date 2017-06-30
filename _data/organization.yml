@@ -1,0 +1,71 @@
+branches:
+  - name: Administrative Operations
+    url: "#"
+    desc: Lorem ipsum dolor sit amet.
+  - name: Digital Investigations
+    url: "#"
+    desc: Lorem ipsum dolor sit amet.
+  - name: Exclusions
+    url: "#"
+    desc: Lorem ipsum dolor sit amet.
+  - name: Investigations
+    url: "#"
+    desc: Lorem ipsum dolor sit amet.
+  - name: National Training & Emergency Operations
+    url: "#"
+    desc: Lorem ipsum dolor sit amet.
+  - name: Special Investigations
+    url: "#"
+    desc: Lorem ipsum dolor sit amet.
+
+regions:
+  - name: Boston
+    region-code: 1
+    state: MA
+    url: "#"
+    offices: [Hartford, Scarborough, Providence, Burlington]
+  - name: New York
+    region-code: 2
+    state: NY
+    url: "#"
+    offices: [Albany, Buffalo, Edison, San Juan]
+  - name: Philadelphia
+    region-code: 3
+    state: PA
+    url: "#"
+    offices: [Harrisburg, Washington, Bethesda, Columbia, Richmond, Roanoke, Charleston]
+  - name: Atlanta
+    region-code: 4
+    state: GA
+    url: "#"
+    offices: [Savannah, Birmingham, Lexington, Jackson, Greensboro, Columbia, Nashville]
+  - name: Miami
+    region-code: M
+    state: FL
+    url: "#"
+    offices: [Jacksonville, Tampa]
+  - name: Chicago
+    region-code: 5
+    state: IL
+    url: "#"
+    offices: [Indianapolis, Detroit, Grand Rapids, St. Paul, Cleveland, Columbus, Milwaukee]
+  - name: Dallas
+    region-code: 6
+    state: TX
+    url: "#"
+    offices: [Houston, San Antonio, McAllen, Little Rock, Baton Rouge, Oklahoma City]
+  - name: Kansas City
+    region-code: 7
+    state: MO
+    url: "#"
+    offices: [St. Louis, Denver, Des Moines, Sioux Falls, Salt Lake City]
+  - name: San Francisco
+    region-code: 9
+    state: CA
+    url: "#"
+    offices: [Concord, Sacramento, Boise, Portland, Seattle]
+  - name: Los Angeles
+    region-code: LA
+    state: CA
+    url: "#"
+    offices: [San Diego, Phoenix, Las Vegas]

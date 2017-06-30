@@ -1,0 +1,35 @@
+{% if org %}
+
+  <h2>Our Organization</h2>
+
+  <div class="usa-width-one-third">
+    <h3>Branches</h3>
+    <ul class="usa-unstyled-list hhsoig-resource_list">
+      {% for branch in org.branches %}
+        <li class="">
+          <h4><a href="{{branch.url}}">{{branch.name}}</a></h4>
+          <p>{{branch.desc}}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="usa-width-two-thirds">
+    <h3>Regions</h3>
+    <ul class="usa-unstyled-list hhsoig-resource_list">
+      {% assign _regions = org.regions | sort:"name" %}
+      {% for region in _regions %}
+        <li class="">
+          <h4><a href="{{region.url}}">{{region.name}}</a></h4>
+          <p>
+            {% assign _offices = region.offices | sort %}
+            {% for office in _offices %}
+              {{office}}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endif %}

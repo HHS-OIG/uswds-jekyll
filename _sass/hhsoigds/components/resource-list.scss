@@ -1,0 +1,27 @@
+.hhsoig-resource_list {
+
+  li {
+    border-top: 1px solid $color-gray-light;
+  }
+
+  h4 {
+    @include h3();
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  a {
+    @include remove-underlines();
+
+    // FIXME: Disabling purple visited links during design/dev phase. Remove in production.
+    &:visited {
+      color: $color-primary;
+    }
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+
+}
