@@ -11,3 +11,7 @@
   border-width: 1px 0;
   background-color: $color-hhsoig-blue-light;
 }
+
+.hhsoig-section:last-of-type {
+  border-top: 1rem solid $color-primary-darker;
+}

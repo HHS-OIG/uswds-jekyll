@@ -76,17 +76,24 @@ layout: base
   {% include organization.html %}
 </section>
 
+{% comment %}
 {% capture _graphics %}
   {% include graphic-list.html graphics=page.graphics %}
 {% endcapture %}
 {% if page.graphics_position != 'after' %}{{ _graphics }}{% endif %}
-
-<section id="resource-finder" class="usa-section">
-  <div class="usa-grid">
-    <div class="usa-width-one-whole">
-
-    </div>
-  </div>
-</section>
-
 {% if page.graphics_position == 'after' %}{{ _graphics }}{% endif %}
+{% endcomment %}
+
+<section id="resource-finder" class="usa-grid usa-section hhsoig-section">
+  <h2>Find OI Tools &amp; Resources</h2>
+    <div class="usa-width-one-third">
+      <h3>Operations</h3>
+    </div>
+    <div class="usa-width-one-third">
+      <h3>Admin</h3>
+    </div>
+    <div class="usa-width-one-third">
+      <h3>Training</h3>
+    </div>
+
+</section>
