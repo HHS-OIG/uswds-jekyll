@@ -1,19 +1,19 @@
-- title: Policies & Procedures
+- title: OI Policies & Procedures
   path: /resources/oi-policies-procedures-manual
   desc: The OIPPM is at the heart of our orgainzation.
+  highlight: true
 # secondary_links:
 #   - text: About
 #     path: /resources/oi-policies-procedures-manual/about
-  highlight: true
   category: operations
 
-- title: Forms
+- title: OI Forms
   path: /resources/oi-forms
   desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nostrud exercitation.
   highlight: true
   category: operations
 
-- title: Locator
+- title: OI Locator
   path: /resources/oi-locator
   desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad minim veniam, quis nostrud exercitation.
   highlight: true
@@ -21,4 +21,5 @@
 
 - title: A.N. Other Resource
   path: /resources/test
+  desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   category: admin

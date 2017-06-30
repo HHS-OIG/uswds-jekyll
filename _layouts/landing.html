@@ -2,11 +2,11 @@
 layout: base
 ---
 
-{% comment %}
+
 {% assign hero = page.hero %}
 {% include components/hero.html %}
 
-{% endcomment %}
+
 
 {% comment %}
 
@@ -76,13 +76,13 @@ layout: base
   {% include organization.html %}
 </section>
 
-{% comment %}
+
 {% capture _graphics %}
   {% include graphic-list.html graphics=page.graphics %}
 {% endcapture %}
 {% if page.graphics_position != 'after' %}{{ _graphics }}{% endif %}
 {% if page.graphics_position == 'after' %}{{ _graphics }}{% endif %}
-{% endcomment %}
+
 
 <section id="resource-finder" class="usa-grid usa-section hhsoig-section">
   <h2>Find OI Tools &amp; Resources</h2>
