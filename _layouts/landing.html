@@ -5,14 +5,10 @@ layout: base
 {% comment %}
 {% assign hero = page.hero %}
 {% include components/hero.html %}
+
 {% endcomment %}
 
-<section class="usa-grid usa-section hhsoig-section">
-  {% include resources-highlighted.html %}
-</section>
-
-{%- comment %}
-	This is a foo
+{% comment %}
 
 {% if page.tagline and page.intro %}
 <section class="usa-grid usa-section">
@@ -25,7 +21,15 @@ layout: base
 </section>
 {% endif %}
 
-{% endcomment -%}
+{% endcomment %}
+
+
+
+<section class="usa-grid usa-section hhsoig-section">
+  {% include resources-highlighted.html %}
+</section>
+
+
 
 {% if site.posts %}
 <section class="usa-section hhsoig-section hhsoig-section-highlight">
@@ -77,10 +81,10 @@ layout: base
 {% endcapture %}
 {% if page.graphics_position != 'after' %}{{ _graphics }}{% endif %}
 
-<section class="usa-section">
+<section id="resource-finder" class="usa-section">
   <div class="usa-grid">
     <div class="usa-width-one-whole">
-    {{ content }}
+
     </div>
   </div>
 </section>

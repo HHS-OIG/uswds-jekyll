@@ -1,7 +1,15 @@
 
 .hhsoig-highlight_block {
-  padding-top: 1rem;
-  border-top: 1rem solid $color-primary;
+
+  // Trendy short borders to visually anchor the blocks
+  h3:before {
+    content: "";
+    display: block;
+    width: 33%;
+    padding-top: .5rem;
+    border-top: .4rem solid $color-primary;
+  }
+
 
   a {
     @include remove-underlines();
