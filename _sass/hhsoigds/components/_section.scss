@@ -1,3 +1,11 @@
+.hhsoig-section {
+  @include padding($hhsoig-site-margins-slimmer null $hhsoig-site-margins-slimmer null);
+
+  h2 {
+    @include margin(null null 3rem null)
+  }
+}
+
 .hhsoig-section-highlight {
   background-color: $color-hhsoig-blue-light;
 }

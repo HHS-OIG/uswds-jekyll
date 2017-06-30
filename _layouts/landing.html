@@ -7,6 +7,13 @@ layout: base
 {% include components/hero.html %}
 {% endcomment %}
 
+<section class="usa-grid usa-section hhsoig-section">
+  {% include resources-highlighted.html %}
+</section>
+
+{%- comment %}
+	This is a foo
+
 {% if page.tagline and page.intro %}
 <section class="usa-grid usa-section">
   <div class="usa-width-one-third">
@@ -18,8 +25,10 @@ layout: base
 </section>
 {% endif %}
 
+{% endcomment -%}
+
 {% if site.posts %}
-<section class="usa-section hhsoig-section-highlight">
+<section class="usa-section hhsoig-section hhsoig-section-highlight">
   <div class="usa-grid">
     <h2>News &amp; Updates</h2>
     <ul class="usa-unstyled-list hhsoig-post_list">
@@ -29,9 +38,9 @@ layout: base
             {% if post.image %}
               <img src="{{post.image.path}}" alt="{{post.image.alt}}">
             {% endif %}
-          <h3>{{ post.title }}</h3>
           </a>
-          <p>{{post.date | date: "%B %-d, %Y"}} |
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="hhsoig-post_list-metadata"><time>{{post.date | date: "%B %-d, %Y"}}</time><br>
           {% for category in post.categories %}
             {{category}}{% unless forloop.last %}, {% endunless %}
           {% endfor %}
@@ -45,7 +54,7 @@ layout: base
           <ul class="usa-unstyled-list">
             <li>
               <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-              <p>{{post.date | date: "%B %-d, %Y"}} |
+              <p class="hhsoig-post_list-metadata"><time>{{post.date | date: "%B %-d, %Y"}}</time><br>
               {% for category in post.categories %}
                 {{category}}{% unless forloop.last %}, {% endunless %}
               {% endfor %}

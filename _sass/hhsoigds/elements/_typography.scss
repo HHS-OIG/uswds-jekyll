@@ -7,6 +7,10 @@ h6 {
   font-family: $font-sans;
 }
 
+h3 {
+  @include h3();
+}
+
 // Custom typography
 .usa-font-lead {
   font-family: $font-sans;

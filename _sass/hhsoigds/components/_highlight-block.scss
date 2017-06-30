@@ -1,4 +1,8 @@
-.hhsoig-post_list {
+
+.hhsoig-highlight_block {
+  padding-top: 1rem;
+  border-top: 1rem solid $color-primary;
+
   a {
     @include remove-underlines();
 
@@ -7,15 +11,4 @@
       color: $color-primary;
     }
   }
-
-  h3 {
-    @include margin(.5rem null 0 null);
-  }
-
-  .hhsoig-post_list-metadata {
-    font-size: $h5-font-size;
-    color: $color-gray;
-    margin-top: 0;
-  }
-
 }

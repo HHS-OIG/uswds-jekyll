@@ -1,0 +1,22 @@
+{% if resources %}
+  <h2>Top Resources</h2>
+  <ul class="usa-grid-full usa-unstyled-list">
+    {% assign _highlighted = resources | where:"highlight",true %}
+    {% for resource in _highlighted %}
+      <li class="usa-width-one-third hhsoig-highlight_block">
+        <h3><a href="{{resource.path}}">{{resource.title}}</a></h3>
+        <p>{{resource.desc}}</p>
+        {% if resource.secondary_links %}
+          {% for _link in resource.secondary_links %}
+            <a href="{{_link.path}}">{{ _link.text }}</a>
+          {% endfor %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+<p class="usa-grid-full">
+  <a class="usa-button usa-button-outline" href="#">
+    Find More Resources
+  </a>
+</p>
